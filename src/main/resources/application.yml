@@ -10,6 +10,8 @@ spring:
     password: ${MARIADB_PASSWORD:password}
     username: ${MARIADB_USERNAME:root}
     url: jdbc:mariadb://${MARIADB_HOST:51.210.41.14}:3306/${DB_NAME}?createDatabaseIfNotExist=true
-
-
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
 
