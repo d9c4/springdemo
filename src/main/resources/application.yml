@@ -1,0 +1,15 @@
+DB_NAME: dav
+server:
+  port: 8082
+#  servlet:
+#    context-path: /api
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: ${MARIADB_PASSWORD:password}
+    username: ${MARIADB_USERNAME:root}
+    url: jdbc:mariadb://${MARIADB_HOST:51.210.41.14}:3306/${DB_NAME}?createDatabaseIfNotExist=true
+
+
+
